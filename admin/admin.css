@@ -40,15 +40,24 @@ body {
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
-  background-color: #2d3748;
-  border-radius: 50%;
+  position: relative;
+  display: flex;
+  padding: 0px 0px 43.776px 43.776px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 23.04px;
+  background: #0E91A5;
 }
 
 .avatar.small {
   width: 35px;
   height: 35px;
+}
+
+.avatar img {
+  width: 35px;
+  height: 35px;
+  margin-right: -10px;
 }
 
 .sidebar__name {
@@ -73,6 +82,22 @@ body {
   margin-bottom: 8px;
 }
 
+.btn_click {
+  margin-left: auto;
+  color: #0E91A5;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 13.824px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20.736px;
+  letter-spacing: 0.173px;
+  border-radius: 4.608px;
+  border: 1.152px solid var(--Glass-Stroke, rgba(255, 255, 255, 0.08));
+  background: var(--Glass-Fill, linear-gradient(118deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0.00) 100%));
+  box-shadow: 0px 1.152px 2.304px -1.152px rgba(0, 0, 0, 0.05), 0px 1.152px 3.456px 0px rgba(0, 0, 0, 0.05);
+}
+
 .sidebar__menu {
   list-style: none;
   padding: 0;
@@ -80,7 +105,7 @@ body {
 }
 
 .sidebar__menu li {
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -91,6 +116,10 @@ body {
 
 .sidebar__menu li:hover {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar__menu li img {
+  margin-top: 24px;
 }
 
 .icon {
@@ -150,7 +179,7 @@ body {
 /*=======*/
 .dashboard {
   background: url('/img/nenAdmin.png');
-  padding:0;
+  padding: 0;
   backdrop-filter: blur(2px);
 }
 
@@ -215,33 +244,46 @@ body {
 
 /* =================== STAT CARDS =================== */
 .dashboard__card1 {
-  /* width: 222.264px;
-height: 143.258px; */
   flex-shrink: 0;
   border-radius: 18px;
   border: 0.648px solid #5DC7DB;
   background: #5DC7DB;
   box-shadow: 0px 0px 1.296px 0px rgba(23, 26, 31, 0.12), 0px 0px 0.648px 0px rgba(23, 26, 31, 0.07);
-  ;
   transition: transform 0.2s ease;
+  height: 150px;
 }
 
 .dashboard__card2 {
-  background: white;
-  color: white;
-  border-radius: var(--card-radius);
-  padding: 16px;
   box-shadow: whitesmoke;
   transition: transform 0.2s ease;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+canvas {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.btn-group {
+  padding: 1.296px 13.249px 2.626px 5.76px;
+  border-radius: 14.4px;
+  border: 0.576px solid #5DC7DB;
+  background: #5DC7DB;
+  box-shadow: 0px 0px 1.152px 0px rgba(23, 26, 31, 0.12), 0px 0px 0.576px 0px rgba(23, 26, 31, 0.07);
+}
+
+.btn {
+
+  color: #041B29;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12.672px;
 }
 
 .dashboard__card3 {
-  /* background: linear-gradient(145deg, var(--secondary-bg), #1e2a3a);
-  color: var(--text-color);
-  border-radius: var(--card-radius);
-  padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s ease; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -255,39 +297,40 @@ height: 143.258px; */
 
 .icon_card3 {
   border-radius: 60px;
-background: #0E91A5;
+  background: #0E91A5;
   display: flex;
-padding: 14.4px;
-justify-content: center;
-align-items: center;
-height:50px;
-width:50px;
+  padding: 14.4px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
 }
 
 .icon_card {
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
   display: flex;
-  width: 37.584px;
-  padding: 5.184px 6.479px 7.776px 5.833px;
   justify-content: center;
   align-items: center;
-  border-radius: 18.792px;
-  border: 0.648px solid #5DC7DB;
-  background: #FFF;
-  box-shadow: 0px 0px 1.296px 0px rgba(23, 26, 31, 0.12), 0px 0px 0.648px 0px rgba(23, 26, 31, 0.07);
-}
-
-.title_card {
-  display: flex;
-  justify-content: space-around;
+  border: 1px solid #5DC7DB;
+  box-shadow: 0px 0px 1.296px rgba(23, 26, 31, 0.12),
+    0px 0px 0.648px rgba(23, 26, 31, 0.07);
 }
 
 .so_card {
   color: #041B29;
-  font-family: Archivo;
-  font-size: 18.144px;
-  font-style: normal;
+  font-family: Archivo, sans-serif;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 27.216px;
+}
+
+.title_card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #041B29;
 }
 
 .dashboard__card:hover {
@@ -326,7 +369,7 @@ width:50px;
   width: 100%;
   align-items: center;
   background: #041B29;
-  /* padding: 20px; */
+  backdrop-filter: blur(12px);
   border-radius: 12px;
   gap: 20px;
 }
