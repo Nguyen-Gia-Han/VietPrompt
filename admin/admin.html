@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+    <header class="main-header d-flex align-items-center p-3">
+        <div class="logo me-3">
+            <img src="/img/logo.png" alt="VietPrompt" >
+        </div>
+        <nav class="nav-menu d-flex flex-grow-1 gap-2">
+            <div class="nav-item active"><a href="#">Giới thiệu</a></div>
+            <div class="nav-item"><a href="#">Thư viện</a></div>
+            <div class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Tính năng</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tính năng 1</a></li>
+                </ul>
+            </div>
+            <div class="nav-item"><a href="#">Dịch vụ</a></div>
+            <div class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Đăng ký</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Gói A</a></li>
+                </ul>
+            </div>
+            <div class="nav-item"><a href="#">Liên hệ</a></div>
+        </nav>
+    </header>
+
+    <section class="dashboard container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="sidebar col-md-2 p-3">
+                <div class="sidebar__header">
+                    <div class="avatar"></div>
+                    <div>
+                        <div class="sidebar__name">Admin</div>
+                        <div class="sidebar__status">Online</div>
+                    </div>
+                </div>
+
+                <hr class="sidebar__divider" />
+
+                <div class="sidebar__section-title">Tiện ích</div>
+                <ul class="sidebar__menu">
+                    <li><i class="icon">🔍</i> Tìm kiếm <span class="badge">Click</span></li>
+                    <li><i class="icon">🛠️</i> Gói dịch vụ</li>
+                </ul>
+
+                <hr class="sidebar__divider" />
+
+                <div class="sidebar__section-title">Danh mục</div>
+                <ul class="sidebar__menu">
+                    <li><i class="icon green">🟢</i> Forum</li>
+                    <li><i class="icon red">🔺</i> List prompt yêu thích</li>
+                    <li><i class="icon orange">🟠</i> Lịch sử giao dịch</li>
+                    <li><i class="icon blue">🔧</i> Cài đặt tài khoản</li>
+                </ul>
+
+                <div class="sidebar__account">
+                    <div class="avatar small"></div>
+                    <div>
+                        <div class="sidebar__account-type">Loại tài khoản</div>
+                        <div class="sidebar__account-badge">Premium</div>
+                    </div>
+                    <div class="settings-icon">⚙️</div>
+                </div>
+            </aside>
+
+
+            <!-- Main Content -->
+            <main class="dashboard__main col-md-10 p-4">
+                <div class="dashboard__stats row text-center mb-4">
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard__card1 card p-3">
+                            <h6>Total Users</h6>
+                            <p>63.65K</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard__card1 card p-3">
+                            <h6>Total Prompt</h6>
+                            <p>845.2K</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard__card1 card p-3">
+                            <h6>Total Revenue</h6>
+                            <p>$2.4M</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="dashboard__card1 card p-3">
+                            <h6>Growth</h6>
+                            <p>0.95%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard__charts row mb-4">
+                    <div class="col-md-7">
+                        <div class="dashboard__card2 card p-3">
+                            <h6>Chart Statistics</h6>
+                            <canvas id="chartStatistics"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="dashboard__card2 card p-3">
+                            <h6>Profit this week</h6>
+                            <canvas id="chartProfit"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard__watched row text-center">
+                    <div class="col-md-4 mb-3">
+                        <div class="dashboard__card3 card p-3">
+                            <p>28 Watched</p>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="dashboard__card3 card p-3">
+                            <p>18 Watched</p>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="dashboard__card3 card p-3">
+                            <p>29 Watched</p>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+
+        <div class="dashboard__partners py-3 text-center">
+            <div class="container">
+                <div class="row" style="display: flex; justify-content: space-between;">
+                    <div class="col-auto"><img src="/img/waverio.svg" alt="weavio" class="img-fluid" ></div>
+                    <div class="col-auto"><img src="/img/squareStore.svg" alt="squarestone" class="img-fluid" ></div>
+                    <div class="col-auto"><img src="/img/martino.svg" alt="martino" class="img-fluid" ></div>
+                    <div class="col-auto"><img src="/img/virogan.svg" alt="virogen" class="img-fluid"></div>
+                    <div class="col-auto"><img src="/img/vertex.svg" alt="vertex" class="img-fluid" ></div>
+                    <div class="col-auto"><img src="/img/aromix.svg" alt="aromix" class="img-fluid" ></div>
+                    <div class="col-auto"><img src="/img/fireli.svg" alt="freli" class="img-fluid"></div>
+                    <div class="col-auto">Natroma</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dashboard__download text-center py-5 bg-light">
+            <h6 class="dashboard__download-title mb-3">DOWNLOAD</h6>
+            <div class="dashboard__logo mb-3">
+                <img src="/img/logo.png" alt="Viet Prompt" height="172px">
+            </div>
+            <div class="dashboard__store-buttons d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-dark px-4"><img src="/img/Group.svg"> Playstore</a>
+                <a href="#" class="btn btn-dark px-4"><img src="/img/Symbols.svg"> Apple Appstore</a>
+                <a href="#" class="btn btn-dark px-4"><img src="/img/widnows-store 1.svg"> Microsoft Store</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Về VietPrompt -->
+                <div class="col-6 col-md-2 footer__column">
+                    <h5 class="footer__title">Về VietPrompt</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Giới thiệu</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Tuyển dụng</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Phản hồi -->
+                <div class="col-6 col-md-2 footer__column">
+                    <h5 class="footer__title">Phản hồi</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Đánh giá</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Tính năng</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Thông tin -->
+                <div class="col-6 col-md-2 footer__column">
+                    <h5 class="footer__title">Thông tin</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                    </ul>
+                </div>
+
+                <!-- Tổng đài hỗ trợ -->
+                <div class="col-md-3 footer__column">
+                    <h5 class="footer__title">Tổng đài hỗ trợ</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">Mua hàng: <strong class="footer__item.content">0123 456 789</strong>
+                        </li>
+                        <li class="footer__item">Bảo hành: <strong class="footer__item.content">0123 456 789</strong>
+                        </li>
+                        <li class="footer__item">Khiếu nại: <strong class="footer__item.content">0123 456 789</strong>
+                        </li>
+                        <li class="footer__item">Email: <strong
+                                class="footer__item.content">vietprompt@gmail.com</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Nền tảng & Subscribe -->
+                <div class="col-md-3 footer__column">
+                    <h5 class="footer__title">Nền tảng</h5>
+                    <div class="footer__platform d-flex gap-2 mb-3">
+                        <img src="/img/App_Store_(iOS).svg.png" alt="App Store">
+                        <img src="/img/Microsoft_Store_app_icon.png" alt="Google Play">
+                        <img src="/img/google-play-icon-2048x2048-487quz63.png" alt="Huawei">
+                    </div>
+                    <h5 class="footer__title">Subscribe</h5>
+                    <div class="footer__subscribe">
+                        <input type="text" class="form-control" placeholder="Get product updates">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div
+                class="footer__bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-4">
+                <div class="footer__social d-flex align-items-center gap-3 mb-3 mb-md-0">
+                    <strong>Kết nối với chúng tôi</strong>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+                <div class="footer__copyright">
+                    © 2025 Fexties. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx1 = document.getElementById('chartStatistics').getContext('2d');
+        const chart1 = new Chart(ctx1, {
+            type: 'line',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [{
+                    label: 'Visitors',
+                    data: [30, 45, 32, 60, 50, 40, 70],
+                    borderColor: '#4f46e5',
+                    backgroundColor: 'rgba(79,70,229,0.2)',
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        const ctx2 = document.getElementById('chartProfit').getContext('2d');
+        const chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [
+                    {
+                        label: 'Sales',
+                        data: [12, 19, 3, 5, 2, 3, 7],
+                        backgroundColor: '#34d399'
+                    },
+                    {
+                        label: 'Revenue',
+                        data: [10, 15, 6, 3, 5, 4, 6],
+                        backgroundColor: '#3b82f6'
+                    }
+                ]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+
+</body>
+
+</html>
