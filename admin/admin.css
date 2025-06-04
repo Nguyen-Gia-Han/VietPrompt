@@ -22,11 +22,11 @@ body {
 /* =================== SIDEBAR =================== */
 .sidebar {
   /* width: 250px; */
- background: linear-gradient(rgba(13, 15, 16, 0.5), rgba(13, 15, 16, 0.5)), url('/img/nenAdmin.png');
-background-size: cover;
-background-position: center;
+  background: linear-gradient(rgba(13, 15, 16, 0.5), rgba(13, 15, 16, 0.5)), url('/img/nenAdmin.png');
+  background-size: cover;
+  background-position: center;
 
- border-radius: 0px 0px 23.04px 23.04px;
+  border-radius: 0px 0px 23.04px 23.04px;
   color: #fff;
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -148,21 +148,23 @@ background-position: center;
 }
 
 /*=======*/
-.dashboard{
-    background: url('/img/nenAdmin.png');
+.dashboard {
+  background: url('/img/nenAdmin.png');
+  padding:0;
+  backdrop-filter: blur(2px);
 }
 
 
 /* =================== HEADER =================== */
-.main-header{
-background: linear-gradient(rgba(13, 15, 16, 0.5), rgba(13, 15, 16, 0.5)), url('/img/nenAdmin.png');
-background-size: cover;
-background-position: center;
+.main-header {
+  background: linear-gradient(rgba(13, 15, 16, 0.5), rgba(13, 15, 16, 0.5)), url('/img/nenAdmin.png');
+  background-size: cover;
+  background-position: center;
 
 }
 
 .logo img {
- width: 149.654px;
+  width: 149.654px;
   height: 131.097px;
 }
 
@@ -213,15 +215,17 @@ background-position: center;
 
 /* =================== STAT CARDS =================== */
 .dashboard__card1 {
-    /* width: 222.264px;
+  /* width: 222.264px;
 height: 143.258px; */
-flex-shrink: 0;
+  flex-shrink: 0;
   border-radius: 18px;
-border: 0.648px solid #FFF;
-background: #5DC7DB;
-  box-shadow: 0px 0px 1.296px 0px rgba(23, 26, 31, 0.12), 0px 0px 0.648px 0px rgba(23, 26, 31, 0.07);;
+  border: 0.648px solid #5DC7DB;
+  background: #5DC7DB;
+  box-shadow: 0px 0px 1.296px 0px rgba(23, 26, 31, 0.12), 0px 0px 0.648px 0px rgba(23, 26, 31, 0.07);
+  ;
   transition: transform 0.2s ease;
 }
+
 .dashboard__card2 {
   background: white;
   color: white;
@@ -230,13 +234,60 @@ background: #5DC7DB;
   box-shadow: whitesmoke;
   transition: transform 0.2s ease;
 }
+
 .dashboard__card3 {
-  background: linear-gradient(145deg, var(--secondary-bg), #1e2a3a);
+  /* background: linear-gradient(145deg, var(--secondary-bg), #1e2a3a);
   color: var(--text-color);
   border-radius: var(--card-radius);
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14.4px;
+  border-radius: 14.4px;
+  border: 3px solid #5DC7DB;
+  box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
+  background-color: transparent;
+  color: white;
+}
+
+.icon_card3 {
+  border-radius: 60px;
+background: #0E91A5;
+  display: flex;
+padding: 14.4px;
+justify-content: center;
+align-items: center;
+height:50px;
+width:50px;
+}
+
+.icon_card {
+  display: flex;
+  width: 37.584px;
+  padding: 5.184px 6.479px 7.776px 5.833px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18.792px;
+  border: 0.648px solid #5DC7DB;
+  background: #FFF;
+  box-shadow: 0px 0px 1.296px 0px rgba(23, 26, 31, 0.12), 0px 0px 0.648px 0px rgba(23, 26, 31, 0.07);
+}
+
+.title_card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.so_card {
+  color: #041B29;
+  font-family: Archivo;
+  font-size: 18.144px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27.216px;
 }
 
 .dashboard__card:hover {
@@ -279,6 +330,7 @@ background: #5DC7DB;
   border-radius: 12px;
   gap: 20px;
 }
+
 /* .col-auto{
    width: 120.539px;
    height: 27.007px;
@@ -293,13 +345,14 @@ background: #5DC7DB;
 /* =================== DOWNLOAD SECTION =================== */
 .dashboard__download-title {
   color: var(--Base-Lite, #0E91A5);
-text-align: center;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 900;
-line-height: 24px; /* 120% */
-text-transform: uppercase;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px;
+  /* 120% */
+  text-transform: uppercase;
 }
 
 .dashboard__store-buttons {
@@ -312,7 +365,7 @@ text-transform: uppercase;
   background-color: var(--primary-bg);
   color: white;
   padding: 10px 16px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: 500;
   text-decoration: none;
 }
