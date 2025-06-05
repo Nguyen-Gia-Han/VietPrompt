@@ -178,7 +178,7 @@
   backdrop-filter: blur(2px);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 
@@ -371,7 +371,7 @@ canvas {
   backdrop-filter: blur(12px);
   border-radius: 20px;
   border: 2px solid #0E91A5;
-  top: -50px;
+  top: 35px;
   margin-left: 30px;
     margin-right: 30px;
     display:flex;

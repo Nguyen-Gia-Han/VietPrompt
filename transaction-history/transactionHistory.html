@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transaction history</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="transactionHistory.css" />
+</head>
+
+<body>
+    <header class="main-header d-flex align-items-center p-3">
+        <div class="logo me-3">
+            <img src="/img/logo.png" alt="VietPrompt" />
+        </div>
+        <nav class="nav-menu d-flex flex-grow-1 gap-2">
+            <div class="nav-item active"><a href="#">Giới thiệu</a></div>
+            <div class="nav-item"><a href="#">Thư viện</a></div>
+            <div class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Tính năng</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tính năng 1</a></li>
+                </ul>
+            </div>
+            <div class="nav-item"><a href="#">Dịch vụ</a></div>
+            <div class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Đăng ký</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Gói A</a></li>
+                </ul>
+            </div>
+            <div class="nav-item"><a href="#">Liên hệ</a></div>
+        </nav>
+    </header>
+    <section class="transaction-history-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <aside class="sidebar col-md-2 p-3">
+                    <div class="sidebar__header">
+                        <div class="avatarSide"></div>
+                        <div>
+                            <div class="sidebar__name">Admin</div>
+                            <div class="sidebar__status">Online</div>
+                        </div>
+                    </div>
+
+                    <hr class="sidebar__divider" />
+
+                    <div class="sidebar__section-title">Tiện ích</div>
+                    <ul class="sidebar__menu">
+                        <li>
+                            <img src="/img/search.svg" /> Tìm kiếm
+                            <button class="btn_click">Click</button>
+                        </li>
+                        <li><img src="/img/credit-card.svg" /> Gói dịch vụ</li>
+                    </ul>
+
+                    <hr class="sidebar__divider" />
+
+                    <div class="sidebar__section-title">Danh mục</div>
+                    <ul class="sidebar__menu">
+                        <li><img src="/img/square (1).svg" />Forum</li>
+                        <li><img src="/img/triangle.svg" /> List prompt yêu thích</li>
+                        <li><img src="/img/square.svg" />Lịch sử giao dịch</li>
+                        <li><img src="/img/octagon.svg" /> Cài đặt tài khoản</li>
+                    </ul>
+                    <div class="sidebar__spacer"></div>
+
+                    <div class="sidebar__account">
+                        <div class="avatar small"><img src="/img/Status.svg" /></div>
+                        <div>
+                            <div class="sidebar__account-type">Loại tài khoản</div>
+                            <div class="sidebar__account-badge">Premium</div>
+                        </div>
+                        <div class="settings-icon"><img src="/img/cog.svg" /></div>
+                    </div>
+                </aside>
+
+                <main class="transaction-history__main col-md-10 p-3">
+                    <div class="transaction-wrapper">
+                        <!-- Search Bar -->
+                        <div class="search-bar">
+                            <input type="text" placeholder="🔍 Search your course here..." />
+                            <span class="filter-icon">⚙️</span>
+                        </div>
+
+                        <!-- Lịch Sử Giao Dịch -->
+                             <h3>Lịch Sử Giao Dịch</h3>
+                        <div class="transaction-history">
+                         
+                            <div class="section-header">
+                               
+                                <a href="#">See All</a>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>HỌ TÊN & NGÀY GIAO DỊCH</th>
+                                        <th>TRẠNG THÁI</th>
+                                        <th>TÊN GÓI DỊCH VỤ</th>
+                                        <th>GHI CHÚ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="user-info">
+                                                <div class="avatar"></div>
+                                                <div class="text">
+                                                    <div class="name">TÊN TÀI KHOẢN</div>
+                                                    <div class="date">25/2/2023</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="status frontend">FRONTEND</span></td>
+                                        <td>Understanding Concept Of React</td>
+                                        <td><button class="details-btn">SHOW DETAILS</button></td>
+                                    </tr>
+                                    <!-- Repeat rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Thống Kê Hoạt Động -->
+                          <h3>Thống Kê Hoạt Động</h3>
+                        <div class="activity-stats">
+                            
+                            <div class="section-header">
+                               
+                                <a href="#">See All</a>
+                            </div>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="icon">🛒</div>
+                                    <div class="value">85,246</div>
+                                    <div class="label">Orders</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="icon">💵</div>
+                                    <div class="value">$96,147</div>
+                                    <div class="label">Income</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="icon">🔔</div>
+                                    <div class="value">846</div>
+                                    <div class="label">Notifications</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="icon">💳</div>
+                                    <div class="value">$84,472</div>
+                                    <div class="label">Payment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+            </div>
+
+             <div class="dashboard__partners py-3 text-center">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto"><img src="/img/waverio.svg" alt="weavio" class="img-fluid"></div>
+                        <div class="col-auto"><img src="/img/squareStore.svg" alt="squarestone" class="img-fluid"></div>
+                        <div class="col-auto"><img src="/img/martino.svg" alt="martino" class="img-fluid"></div>
+                        <div class="col-auto"><img src="/img/virogan.svg" alt="virogen" class="img-fluid"></div>
+                        <div class="col-auto"><img src="/img/vertex.svg" alt="vertex" class="img-fluid"></div>
+                        <div class="col-auto"><img src="/img/aromix.svg" alt="aromix" class="img-fluid"></div>
+                        <div class="col-auto"><img src="/img/fireli.svg" alt="freli" class="img-fluid"></div>
+                        <div class="col-auto text-white">Natroma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="dashboard__download text-center py-5 bg-light">
+        <h6 class="dashboard__download-title mb-3">DOWNLOAD</h6>
+        <div class="dashboard__logo mb-3">
+            <img src="/img/logo.png" alt="Viet Prompt" height="172px" />
+        </div>
+        <div class="dashboard__store-buttons d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-dark px-4"><img src="/img/Group.svg" /> Google Playstore</a>
+            <a href="#" class="btn btn-dark px-4"><img src="/img/Symbols.svg" /> Apple Appstore</a>
+            <a href="#" class="btn btn-dark px-4"><img src="/img/widnows-store 1.svg" /> Microsoft Store</a>
+        </div>
+    </div>
+
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Về VietPrompt -->
+                <div class="col-6 col-md-2 footer__column">
+                    <h5 class="footer__title">Về VietPrompt</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Phản hồi -->
+                <div class="col-6 col-md-2 footer__column">
+                    <h5 class="footer__title">Phản hồi</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Đánh giá</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Tính năng</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Thông tin -->
+                <div class="col-6 col-md-2 footer__column">
+                    <h5 class="footer__title">Thông tin</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                        <li class="footer__item">Fill text</li>
+                    </ul>
+                </div>
+
+                <!-- Tổng đài hỗ trợ -->
+                <div class="col-md-3 footer__column">
+                    <h5 class="footer__title">Tổng đài hỗ trợ</h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            Mua hàng:
+                            <strong class="footer__item.content">0123 456 789</strong>
+                        </li>
+                        <li class="footer__item">
+                            Bảo hành:
+                            <strong class="footer__item.content">0123 456 789</strong>
+                        </li>
+                        <li class="footer__item">
+                            Khiếu nại:
+                            <strong class="footer__item.content">0123 456 789</strong>
+                        </li>
+                        <li class="footer__item">
+                            Email:
+                            <strong class="footer__item.content">vietprompt@gmail.com</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nền tảng & Subscribe -->
+                <div class="col-md-3 footer__column">
+                    <h5 class="footer__title">Nền tảng</h5>
+                    <div class="footer__platform d-flex gap-2 mb-3">
+                        <img src="/img/App_Store_(iOS).svg.png" alt="App Store" />
+                        <img src="/img/Microsoft_Store_app_icon.png" alt="Google Play" />
+                        <img src="/img/google-play-icon-2048x2048-487quz63.png" alt="Huawei" />
+                    </div>
+                    <h5 class="footer__title">Subscribe</h5>
+                    <div class="footer__subscribe">
+                        <input type="text" class="form-control" placeholder="Get product updates" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div
+                class="footer__bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 mt-4">
+                <div class="footer__social d-flex align-items-center gap-3 mb-3 mb-md-0">
+                    <strong>Kết nối với chúng tôi</strong>
+                    <a href="#"><img src="/img/fb.png" /></a>
+                    <a href="#"><img src="/img/ig.png" /></a>
+                    <a href="#"><img src="/img/tt.png" /></a>
+                </div>
+                <div class="footer__copyright">
+                    © 2025 Fexties. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
