@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>information</title>
+    <title>favourite</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="information.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="favourite.css" />
 </head>
-
 <body>
     <header class="main-header d-flex align-items-center p-3">
         <div class="logo me-3">
@@ -35,7 +35,7 @@
         </nav>
     </header>
 
-    <section class="information-section ">
+    <section class="favourite-section ">
         <div class="container-fluid">
             <div class="row">
                 <!-- Sidebar -->
@@ -82,161 +82,95 @@
 
                 <!-- Main Content -->
                 <main class="dashboard__main col-md-10">
-                    <div class="profile-section">
-                        <div class="profile-header">
-                            <div class="group-info">
-                                <div class="group-info-left">
-                                    <div><span style="color:black; font-size:13px">HỘI NHÓM ONLINE</span></div>
-                                    <div><span style="color:black; font-size:24px; font-weight:bold">Sharpen Your Skills With<br> Professional Online Courses</span></div>
-                                   
-                                    <button class="join-btn">Join Now<img src="/img/play.svg"></button>
-                                </div>
-                                
-                            </div>
-                            <!-- <div class="icon-start">
-                                <img src="/img/Star 1.svg">
-                            </div> -->
+                    <span class="name">Bộ lọc</span>
+                    <div class="filter-buttons">
+                       
+                        <div class="group-filter-buttons">
+                            <img src="/img/select.svg" style="width: 28.8px; height: 28.8px;">
+                            <label class="filter-option">
+                                <span>Hoạt hình</span>
+                              </label>
                         </div>
-
-                        <div class="profile-container">
-                            <!-- Khối bên trái -->
-                            <div class="left-panel glass-box d-flex">
-                                <div class="user-profile">
-                                    <div class="avatarUser"></div>
-                                    <div class="user-info-box">
-                                        <div class="user-name">TÊN NGƯỜI DÙNG</div>
-                                        <div class="user-desc">Giới thiệu bản thân</div>
-                                    </div>
-                                </div>
-
-
-                                <div class="setting-box">
-                                    <div class="d-flex justify-content-between">
-                                        <img src="/img/component.svg">
-                                        <span>Cài đặt chung</span>
-                                        <img src="/img/dropdown.svg">
-                                        <img src="/img/icon_componenct.svg">
-                                        <img src="/img/menu.svg">
-                                    </div>
-                                   
-                                    <div class="setting-item"><span class="setting-item-title">Giới thiệu</span><img src="/img/Switch.svg" style="width:30px"></div>
-                                    <div class="setting-item"><span class="setting-item-title">Avt</span><img src="/img/Switch.svg" style="width:30px"></div>
-                                    <div class="setting-item">
-                                        <span>Select Image</span>
-                                        <select class="setting-item-select">
-                                            <option>New Image</option>
-                                        </select>
-                                    </div>
-                                    <div class="setting-item"><span class="setting-item-title">Hiệu ứng viền</span><img src="/img/Switch.svg" style="width:30px">
-                                    </div>
-                                    <div class="setting-item"><span class="setting-item-title">Hiệu ứng avt</span><img src="/img/Switch.svg" style="width:30px"></div>
-                                    <div class="setting-item"><span class="setting-item-title">Tên user</span><span style="font-size:16px">Lindsay Labatn</span></div>
-                                    <div class="setting-item"><span class="setting-item-title">Trạng thái onl</span><img src="/img/Switch.svg" style="width:30px">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Khối bên phải -->
-                            <div class="right-panel glass-box">
-                                <div class="input-grid">
-                                    <div class="field"><label>Full Name</label><input type="text"></div>
-                                    <div class="field"><label>Nick Name</label><input type="text"></div>
-                                    <div class="field"><label>Gender</label><input type="text"></div>
-                                    <div class="field"><label>Country</label><input type="text"></div>
-                                    <div class="field"><label>Language</label><input type="text"></div>
-                                    <div class="field"><label>Time Zone</label><input type="text"></div>
-                                    <div class="field full-width"><label>My email address</label></div>
-                                    <div class="add-email-btn">+Add Email Address</div>
-                                </div>
-                            </div>
+                        <div class="group-filter-buttons">
+                            <img src="/img/select.svg" style="width: 28.8px; height: 28.8px;">
+                            <label class="filter-option">
+                                <span>Semi</span>
+                              </label>
                         </div>
-
-                        <div class="project-nav-buttons">
-                            <button class="nav-btn"><img src="/img/arrow-left.svg" alt="Left"></button>
-                            <button class="nav-btn"><img src="/img/arrow-right.svg" alt="Right"></button>
+                        <div class="group-filter-buttons">
+                            <img src="/img/select.svg" style="width: 28.8px; height: 28.8px;">
+                            <label class="filter-option">
+                                <span>Tác giả ABC</span>
+                              </label>
+                        </div>
+                        <div class="group-filter-buttons">
+                            <img src="/img/select.svg" style="width: 28.8px; height: 28.8px;">
+                            <label class="filter-option">
+                                <span>Công nghệ</span>
+                              </label>
+                        </div>
+                        <div class="group-filter-buttons">
+                            <img src="/img/select.svg" style="width: 28.8px; height: 28.8px;">
+                            <label class="filter-option">
+                                <span>Sự kiện</span>
+                              </label>
+                        </div>
+                        <div class="group-filter-buttons">
+                            <img src="/img/select.svg" style="width: 28.8px; height: 28.8px;">
+                            <label class="filter-option">
+                                <span>Động vật</span>
+                              </label>
+                        </div>
+                      </div>
+                    <div class="swiper mySwiper mt-4">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="/img/anh1.png" alt="Prompt 1">
+                            <div class="image-caption">
+                                <img src="/img/anh1_1.png" class="avatar" alt="Avatar">
+                                <span class="username">vitecrow</span>
+                              </div>
                           </div>
-
-                        <div class="project-list">
-                            <div class="project-card" *ngFor="let project of projects">
-                                <div class="project-img">
-                                    <!-- <img src="/img/project-placeholder.jpg" alt="project image"> -->
-                                    <div class="heart-icon">
-                                      <img src="/img/heartcard.svg" alt="Heart icon">
-                                    </div>
-                                  </div>
-                                <div class="frontend">FRONTEND</div>
-                                <div class="project-title">Tên Dự Án</div>
-                                <img src="/img/Group 2.svg">
-                                <div class="project-author d-flex">
-                                    <div class="chamXanh"></div>
-                                    <div>Prashant Kumar Singh<br><span>Software Developer</span></div>
-
-                                </div>
-                            </div>
+                          <div class="swiper-slide">
+                            <img src="/img/anh2.png" alt="Prompt 2">
+                            <div class="image-caption">
+                                <img src="/img/anh1_1.png" class="avatar" alt="Avatar">
+                                <span class="username">vitecrow</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/anh4.png" alt="Prompt 3">
+                            <div class="image-caption">
+                                <img src="/img/anh1_1.png" class="avatar" alt="Avatar">
+                                <span class="username">vitecrow</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/rong.png" alt="Prompt 4">
+                            <div class="image-caption">
+                                <img src="/img/anh1_1.png" class="avatar" alt="Avatar">
+                                <span class="username">vitecrow</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="/img/anh2.png" alt="Prompt 2">
+                            <div class="image-caption">
+                                <img src="/img/anh1_1.png" class="avatar" alt="Avatar">
+                                <span class="username">vitecrow</span>
+                              </div>
+                          </div>
                         </div>
+                        <div class="swiper-pagination mt-3"></div>
                     </div>
-
-
-                    <div class="dashboard__watched row text-center">
-                        <div class="col-md-4">
-                            <div class="dashboard__card3 p-3">
-                                <div class="icon_card3">
-                                    <img src="/img/notification.svg" />
-                                </div>
-                                <div>
-                                    <p>2/8 Watched</p>
-                                    <p>Product Design</p>
-                                </div>
-                                <div style="
-                        align-items: center;
-                        display: flex;
-                        justify-content: center;
-                        ">
-                                    <img src="/img/more.svg" />
-                                </div>
-                            </div>
+                      
+                      
+                        <div class="carousel-controls text-center mt-3">
+                          <button class="btn  me-2">Thêm yêu thích</button>
+                          <button class="btn me-2">Xem chi tiết</button>
+                          <button class="btn ">Tạo prompt mới</button>
                         </div>
-                        <div class="col-md-4">
-                            <div class="dashboard__card3 p-3">
-                                <div class="icon_card3">
-                                    <img src="/img/notification.svg" />
-                                </div>
-                                <div>
-                                    <div>
-                                        <p>2/8 Watched</p>
-                                    </div>
-                                    <div>
-                                        <p>Product Design</p>
-                                    </div>
-                                </div>
-                                <div style="
-                        align-items: center;
-                        display: flex;
-                        justify-content: center;
-                        ">
-                                    <img src="/img/more.svg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="dashboard__card3 p-3">
-                                <div class="icon_card3">
-                                    <img src="/img/notification.svg" />
-                                </div>
-                                <div>
-                                    <p>2/8 Watched</p>
-                                    <p>Product Design</p>
-                                </div>
-                                <div style="
-                        align-items: center;
-                        display: flex;
-                        justify-content: center;
-                        ">
-                                    <img src="/img/more.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                    
                 </main>
             </div>
 
@@ -370,6 +304,27 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       const swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 150,
+                modifier: 2,
+                slideShadows: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        }); 
 
+      </script>
+</body>
 </html>

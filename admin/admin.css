@@ -173,7 +173,8 @@
 
 /*=======*/
 .dashboard {
-  background: url('/img/nenAdmin.png');
+  background: url('/img/nenAdmin.png') no-repeat center center;
+  background-size: cover;
   padding: 0;
   backdrop-filter: blur(2px);
   border-bottom-left-radius: 50px;
