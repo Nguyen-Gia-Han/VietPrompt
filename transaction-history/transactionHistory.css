@@ -339,6 +339,7 @@
   padding: 10px 20px;
   margin-bottom: 24px;
   position: relative;
+  width: 90%;
 }
 
 .search-bar input {
