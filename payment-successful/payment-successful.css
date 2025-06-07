@@ -175,6 +175,7 @@
     background-position: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    filter: brightness(0.9);
 }
 
 .payment-successful-section::after {
@@ -189,28 +190,40 @@
     z-index: 0;
 }
 .payment-success-message {
- padding: 80px 0; 
+    padding: 80px 0; 
+    position: relative;
+    z-index: 1;
 }
 
-.payment-success-message h1 {
- font-size: 4.5rem; 
+.payment-success-message span {
+ font-size: 130px; 
  font-weight: bold;
- color: #70d6ff; 
+ /* color: #70d6ff;  */
  text-align: center;
  text-transform: uppercase;
  letter-spacing: 2px;
  text-shadow: -1px -1px 0 #0e1728, 1px -1px 0 #0e1728, -1px 1px 0 #0e1728, 1px 1px 0 #0e1728; 
  margin-bottom: 15px;
+    /* Gradient Text */
+    background: var(--Lite-Gradient, linear-gradient(180deg, #D7FAFF 0%, #0E91A5 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    /* Optional: remove text-shadow if needed */
+    text-shadow: none;
 }
 
 .payment-success-message p {
- font-size: 1.5rem; 
- color: #ffffff;
+ font-size: 40px; 
+ color: #FFF;
  text-align: center;
- font-weight: normal;
+ font-weight: 500;
 }
 .payment-successful-section .container-fluid > .payment-success-message {
- border: 2px solid #70d6ff;
- border-radius: 10px;
+    border-radius: 25.92px;
+    border: 4.32px solid var(--Dark-Gradient, #295672);
  padding: 60px; 
 }
+

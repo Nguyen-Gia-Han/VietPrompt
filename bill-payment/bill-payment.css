@@ -171,28 +171,29 @@
 /* =================== Bill Payment Form & Summary =================== */
 .bill-form-card,
 .summary-card {
-  background: rgba(4, 27, 41, 0.6);
+  background: #E8FBFF;
   border: 1px solid #0e91a5;
   border-radius: 20px;
   color: #ffffff;
-  backdrop-filter: blur(10px);
 }
 
 .form-title {
-  font-size: 1.5rem;
+  color:#041B29;
+  font-size: 40px;
   font-weight: 600;
+  text-align: center;
 }
 
 .form-subtitle {
-  color: #adb5bd;
-  font-size: 0.9rem;
+  color:#041B29;
+  font-size: 16px;
 }
 
 .bill-form-card .form-control {
-  background-color: #041b29;
-  border: 1px solid #0e91a5;
-  border-radius: 8px;
-  color: #ffffff;
+  background-color: #F7F7F7;
+  border: 1px solid #0E91A5;
+  border-radius: 25px;
+  color: #0E91A5;
   padding: 0.75rem 1rem;
 }
 
@@ -208,18 +209,30 @@
 }
 
 .total-product-amount {
-  background-color: #041b29;
-  border: 1px solid #0e91a5;
-  border-radius: 8px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.total{
+  align-items:center;
+  width:75%;
 }
 
 .total-product-amount .amount {
   font-weight: bold;
   color: #ffffff;
 }
+.total-product-amount-title {
+  color: #041B29;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  }
 
 .btn-confirm {
-  background-color: #0e91a5;
+  background-color: #0E91A5;
   color: #ffffff;
   font-weight: bold;
   padding: 0.75rem;
@@ -233,19 +246,20 @@
 }
 
 .summary-title {
-  font-size: 1.25rem;
+  color:#252641;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .summary-item {
-  background-color: #0a2c40;
-  border-radius: 12px;
+  color:#000;
+  border-bottom: 1px solid #041B29;
 }
 
 .item-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #0e91a5;
+  width: 15%;
+  height: 80px;
+  background-color: #5DC7DB;
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -266,19 +280,79 @@
 }
 
 .item-details .item-price {
-  color: #ffffff;
+  color: #000;
   font-size: 1rem;
 }
 
 .summary-calculation {
-  font-size: 0.95rem;
+  font-size: 24px;
+  font-weight: 600;
+  color:#041B29;
+}
+.group-summary-calculation{
+  border-bottom: 1px solid #041B29;
 }
 
 .summary-divider {
-  border-top: 1px solid #0e91a5;
+  width:15%;
+  border-top: 3px solid #0e91a5;
   opacity: 0.75;
 }
 
 .total-amount {
-  font-size: 1.1rem;
+  font-size: 24px;
+  font-weight: bold;
+  color:#000;
+}
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none; 
+}
+
+.checkbox-label {
+  display: block;
+  width: 90px; 
+  height: 50px; 
+  background-color: #F7F7F7; 
+  border: 2px solid #0E91A5; 
+  border-radius: 25px; 
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.checkbox-label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -85%) scale(0);
+  width: 30px; 
+  height: 16px; 
+  border: 3px solid white; 
+  border-top: none;
+  border-right: none;
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0; 
+}
+
+.hidden-checkbox:checked + .checkbox-label {
+  background-color: #ffffff; 
+  border-color: #008080; 
+}
+
+.hidden-checkbox:checked + .checkbox-label::after {
+  content: '';
+  transform: translate(-50%, -85%) rotate(-46deg) scale(1); 
+  border-color: #00a000; 
+  opacity: 1; 
 }

@@ -40,47 +40,59 @@
 
   <section class="bill-payment-section py-5 p-5">
     <div class="container-fluid">
-      <div class="row ">
+      <div class="row d-flex justify-content-center ">
         <div class="col-lg-5 mb-4 mb-lg-0">
           <div class="bill-form-card p-4 h-100">
-            <h2 class="form-title mb-2">HÓA ĐƠN MUA GÓI DỊCH VỤ</h2>
+            <p class="form-title mb-2">HÓA ĐƠN MUA GÓI DỊCH VỤ</p>
             <p class="form-subtitle mb-4">
               Lorem ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
+            <hr class="summary-divider" />
             <form>
               <div class="row">
                 <div class="col-md-6 mb-3">
-                  <input type="text" class="form-control" placeholder="Lorem ipsum*" />
+                  <label style="color: #808083;">Lorem ipsum*</label>
+                  <input type="text" class="form-control" />
                 </div>
                 <div class="col-md-6 mb-3">
-                  <input type="text" class="form-control" placeholder="Lorem ipsum*" />
+                  <label style="color: #808083;">Lorem ipsum*</label>
+                  <input type="text" class="form-control"/>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <input type="text" class="form-control" placeholder="Lorem ipsum*" />
+                  <label style="color: #808083;">Lorem ipsum*</label>
+                  <input type="text" class="form-control"/>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <input type="text" class="form-control" placeholder="Lorem ipsum*" />
+                  <label style="color: #808083;">Lorem ipsum*</label>
+                  <input type="text" class="form-control"/>
                 </div>
               </div>
-              <div class="total-product-amount d-flex justify-content-between align-items-center p-3 my-3">
-                <span>Tổng tiền của sản phẩm</span>
-                <div class="d-flex align-items-center">
-                  <span class="amount me-2">150.000.000 vnd</span>
-                  <img src="https://i.imgur.com/T02o1s5.png" alt="Verified" style="width: 24px; height: 24px;" />
+              <div class="group-total-product-amount align-items-center my-3">
+                <span class="total-product-amount-title">TỔNG TIỀN CỦA SẢN PHẨM</span>
+                <div class="total-product-amount my-3">
+                  <div class="total d-flex ">
+                    <input type="text" class="form-control" placeholder="150.000.000 vnd" />
+                  </div>
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="customCheckbox" class="hidden-checkbox">
+                    <label for="customCheckbox" class="checkbox-label"></label>
+                </div>
                 </div>
               </div>
+              
               <div class="mb-3">
-                <textarea class="form-control" rows="4" placeholder="GHI CHÚ"></textarea>
+                <label class="total-product-amount-title">GHI CHÚ</label>
+                <textarea class="form-control" rows="4" ></textarea>
               </div>
-              <button type="submit" class="btn btn-confirm w-100">
+              <button type="submit" class="btn btn-confirm">
                 XÁC NHẬN
               </button>
             </form>
           </div>
         </div>
 
-        <div class="col-lg-7">
+        <div class="col-lg-6">
           <div class="summary-card p-4 h-100">
             <h3 class="summary-title mb-4">Summary</h3>
             <div class="summary-item mb-3 p-3">
@@ -90,7 +102,9 @@
                   <p class="item-title-text mb-1">
                     adipising elit, sed do eiusmod tempor
                   </p>
-                  <a href="#" class="item-link">lorem ipsum dolor...</a>
+                  <p class="item-title-text mb-1">
+                    Lorem ipsum dolor...
+                  </p>
                   <p class="item-price fw-bold mb-0 mt-1">100.000 VND</p>
                 </div>
               </div>
@@ -108,22 +122,21 @@
             </div>
 
             <div class="summary-calculation mt-4">
-              <div class="d-flex justify-content-between mb-2">
+              <div class="d-flex justify-content-between mb-2 py-3 group-summary-calculation">
                 <span>Subtotal</span>
                 <span>250.000 VND</span>
               </div>
-              <div class="d-flex justify-content-between mb-2">
+              <div class="d-flex justify-content-between mb-2 py-3 group-summary-calculation">
                 <span>Coupon Discount</span>
                 <span>0 %</span>
               </div>
-              <div class="d-flex justify-content-between mb-2">
+              <div class="d-flex justify-content-between mb-2 py-3 group-summary-calculation">
                 <span>TAX</span>
                 <span>5</span>
               </div>
-              <hr class="summary-divider" />
-              <div class="d-flex justify-content-between total-amount">
-                <span class="fw-bold">Total</span>
-                <span class="fw-bold">200.000 VND</span>
+              <div class="d-flex justify-content-between py-3 total-amount">
+                <span>Total</span>
+                <span>200.000 VND</span>
               </div>
             </div>
           </div>
@@ -132,7 +145,6 @@
       </div>
 
       <div class="press-section text-white text-center">
-        <!-- <p class="mb-3 fw-semibold">Prompt on VIETPROMPT</p> -->
         <div class="d-flex justify-content-center flex-wrap gap-5 align-items-center">
           <img src="/img/loginAdmin/tnyt.png" alt="New York Times" height="24">
            <div style="font-size: 16px; font-weight:700;">Prompt on VIETPROMPT</div>
