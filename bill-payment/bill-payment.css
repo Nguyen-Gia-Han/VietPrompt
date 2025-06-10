@@ -164,11 +164,12 @@
     opacity: 1;
 }
 
+
+/* =================== Bill Payment Form & Summary =================== */
 .bill-payment-section{
     background: url('/img/nenAdmin.png') no-repeat center center;
     background-size: cover;
 }
-/* =================== Bill Payment Form & Summary =================== */
 .bill-form-card,
 .summary-card {
   background: #E8FBFF;

@@ -1,0 +1,588 @@
+/* =================== HEADER =================== */
+.main-header {
+    background: linear-gradient(rgba(13, 15, 16, 0.5), rgba(13, 15, 16, 0.5)), url('/img/nenAdmin.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.logo img {
+    width: 149.654px;
+    height: 131.097px;
+}
+.nav-menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+}
+.nav-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+.nav-item a {
+    color: #000;
+    text-decoration: none;
+}
+.nav-item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+}
+.nav-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* =================== FOOTER =================== */
+.footer {
+    background: url('/img/VietPrompt.png');
+    background-size: cover;
+    color: #fff;
+}
+
+.footer__title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer__item {
+    margin-bottom: 0.5rem;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__platform img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.footer__subscribe input {
+    border-radius: 6px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.footer__bottom {
+    border-top: 1px solid #fff;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+.footer__social a {
+    font-size: 1.2rem;
+}
+
+.footer__social a:hover {
+    color: #0d6efd;
+}
+/* =================== Logo brands =================== */
+.dashboard__partners {
+    position: relative;
+    z-index: 1;
+    height: 114px;
+    margin-top: 50px;
+    background: #041B29;
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 2px solid #0E91A5;
+    display:flex;
+    align-items: center;
+}
+
+.dashboard__partners .row {
+    height: 100%;
+    align-items: center;
+}
+
+.dashboard__partners .container {
+    height: 100%;
+}
+
+.dashboard__partners .col-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.dashboard__partners img {
+    max-height: 30px;
+    opacity: 0.8;
+}
+.dashboard__download-title{
+    color: var(--Base-Lite, #0E91A5);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px; 
+    text-transform: uppercase;
+}
+
+.press-section {
+    position: relative;
+    z-index: 1;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 40px;
+}
+
+.press-section img:hover {
+    filter: none;
+    opacity: 1;
+}
+/* =================== create-similar-prompt =================== */
+.create-similar-prompt{
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background: url('/img/nenAdmin.png') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    filter: brightness(0.9);
+}
+
+.prompt-tabs .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-weight: 600; /* Slightly bolder for active */
+}
+
+.prompt-input-group {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 5px; /* Adjust padding to fit icons */
+}
+
+.prompt-input-group input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px 10px; /* Slightly reduced padding */
+    flex-grow: 1;
+    outline: none; /* Remove outline on focus */
+}
+
+.prompt-input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.prompt-input-group button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 8px; /* Consistent padding */
+    font-size: 1.2rem; /* Make icons slightly larger */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prompt-input-group .icon-group {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icons */
+    margin-right: 5px; /* Space before input */
+}
+
+.prompt-input-group .icon-group i {
+    color: #A0AEC0; /* Light gray for icons */
+}
+
+
+.image-display-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    border: 3px solid #5DC7DB;
+    min-height: 400px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px; 
+}
+
+.image-display-container img {
+    height: 504px;
+    object-fit: contain;
+    border-radius: 10px; /* Slightly smaller border-radius for the image itself */
+}
+
+.image-overlay-buttons {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.image-overlay-buttons button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s ease;
+}
+.image-overlay-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.image-footer-buttons {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.image-footer-buttons button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+.image-footer-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.adjustment-panel {
+    background-color: #0B1216; /* Darker background from image */
+    border-radius: 15px;
+    /* backdrop-filter: blur(10px); Remove blur if it clashes with dark background */
+    border: 1px solid #1E3A4B; /* Darker, more defined border */
+    padding: 20px;
+    height: 504px;
+}
+
+.adjustment-panel .form-label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.adjustment-panel .form-control {
+    background-color: transparent; /* Make input background transparent */
+    border: none; /* Remove border */
+    color: #fff;
+    padding: 0; /* Remove padding */
+    height: auto; /* Allow height to adjust */
+}
+.adjustment-panel .form-control:focus {
+    box-shadow: none; /* Remove focus shadow */
+}
+
+.adjustment-panel .d-flex.justify-content-between.align-items-center.mb-3 h6 {
+    font-weight: 600; /* Bold the main titles like 'Color' */
+    font-size: 1rem;
+}
+
+.color-picker-container {
+    height: 15px; /* Reduced height for hue bar */
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000); /* Standard rainbow */
+    border-radius: 8px; /* More rounded */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Hide overflow for gradient effect */
+}
+
+.saturation-bar {
+    height: 15px; /* Reduced height for saturation bar */
+    background: linear-gradient(to right, #808080, #5a5acd, #0000ff); /* Điều chỉnh màu sắc cho phù hợp chính xác */
+    border-radius: 8px; /* More rounded */
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 5px; /* Space between label and bar */
+}
+
+.slider-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px; /* Spacing between sliders */
+}
+
+.slider-group input[type="range"] {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px; /* Thinner track */
+    background: transparent; /* Track background is handled by the gradient bar */
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    position: absolute; /* Position over the gradient bar */
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%; /* Cover the gradient bar */
+}
+
+.slider-group input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent; /* Ensure track is transparent */
+    border-radius: 5px;
+}
+
+.slider-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px; /* Thumb size */
+    height: 18px; /* Thumb size */
+    background: #fff; /* White thumb */
+    border: 2px solid #000; /* Black border for thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px; /* Adjust thumb vertical position */
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Outer glow/border */
+}
+
+.slider-group input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.slider-group .value-display {
+    color: #fff;
+    width: 40px;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.effect-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px 0; /* Add some vertical padding */
+}
+
+.effect-item .effect-name {
+    color: #A0AEC0; /* Lighter color for effect name */
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.effect-item .effect-value {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.effect-item .btn-group button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    color: #A0AEC0; /* Icon color */
+    padding: 5px; /* Adjust padding */
+    border-radius: 5px;
+    font-size: 0.8rem; /* Smaller icons */
+    transition: color 0.2s ease;
+}
+
+.effect-item .btn-group button:hover {
+    color: #fff; /* White on hover */
+}
+
+
+.add-effect-btn {
+    color: #686B6E; /* Text color */
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; 
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.add-effect-btn:hover {
+    background-color: rgba(160, 174, 192, 0.1); 
+    color: #fff; 
+}
+.name-prompt{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+.mota{
+    display: flex;
+    justify-content: space-between;
+    background: #0E91A5;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+}
+
+.prompt-controls {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    border: 3px solid #5DC7DB;
+    padding: 20px;
+    position: relative; /* Quan trọng cho red-line-bottom */
+    overflow: hidden; /* Để bo góc nội dung */
+}
+
+.prompt-controls .description-text {
+    font-size: 0.9rem;
+    color: #a0aec0 !important; /* Màu xám nhạt hơn cho mô tả */
+}
+
+/* Styles cho các icon hành động hình tròn */
+.prompt-controls .action-icons .circle-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.1); /* Nền icon hơi mờ */
+    border-radius: 50%;
+    margin-left: 5px; /* Khoảng cách giữa các icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Viền mỏng */
+}
+
+.prompt-controls .share-text {
+    font-size: 0.9rem;
+    color: #a0aec0 !important; 
+}
+
+.prompt-controls .edit-btn {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: #a0aec0; 
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.prompt-controls .edit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.prompt-controls .tabs-navigation {
+    display: flex;
+    gap: 20px; 
+    margin-top: 20px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px; 
+    position: relative; 
+}
+
+.prompt-controls .tab-item {
+    color: #a0aec0; 
+    text-decoration: none;
+    padding: 5px 0;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.prompt-controls .tab-item:hover {
+    color: #fff; 
+}
+
+.prompt-controls .tab-item.active {
+
+    position: relative;
+}
+
+.prompt-controls .tab-item.active .active-indicator {
+    position: absolute;
+    bottom: -11px; 
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #dc3545; 
+    border-radius: 2px;
+}
+
+.prompt-controls .tab-item i {
+    font-size: 1rem; 
+    margin-right: 5px; 
+    color: #dc3545; 
+}
+.avatar-wrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: -12px;
+}
+
+.avatar-wrapper:first-child {
+    margin-left: 0;
+    /* không chồng cái đầu tiên */
+}
+.ellipse {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+}
