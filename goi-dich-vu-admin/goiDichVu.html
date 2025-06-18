@@ -96,48 +96,83 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Tên gói</th>
-                                        <th>Giá</th>
-                                        <th>Thể loại</th>
+                                        <th>Tên gói</th> 
                                         <th>Mô tả</th>
-                                        <th>Hình ảnh</th>
+                                        <th>Giá (VNĐ)</th>
+                                        <th>Danh mục</th>
+                                        <th>Tags</th> 
+                                        <th>Ảnh đại diện</th> 
+                                        <th>Ảnh bổ sung</th>
+                                        <th>Câu hỏi</th>
+                                        <th>Câu trả lời</th> 
+                                        <th>Hành động</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th>1</th>
                                         <td>Gói training Cơ bản</td>
+                                        <td>
+                                            <ul class="package-description-list">
+                                                <li>Responsive website design and development (5 pages)</li>
+                                                <li>Basic SEO</li>
+                                                <li>Social media management</li>
+                                            </ul>
+                                        </td>
                                         <td>100.000 VNĐ</td>
                                         <td>Gói cơ bản</td>
                                         <td>
-                                            <ul class="package-description-list">
-                                                <li>Hỗ trợ khách hàng 24/7</li>
-                                                <li>Ưu tiên truy cập beta</li>
-                                            </ul>
+                                            <div class="d-flex flex-wrap gap-1">
+                                                <span class="badge bg-secondary">Web Design</span>
+                                                <span class="badge bg-secondary">Marketing</span>
+                                            </div>
                                         </td>
-                                        <td><img src="https://via.placeholder.com/50x50" class="package-thumbnail"></td> <td>
-                                            <button class="btn btn-sm btn-info me-2">Sửa</button>
-                                            <button class="btn btn-sm btn-danger">Xóa</button>
+                                        <td><img src="https://via.placeholder.com/50x50?text=Avatar1" alt="Ảnh đại diện" class="package-thumbnail"></td>
+                                        <td>
+                                            <div class="d-flex flex-wrap gap-1">
+                                                <img src="https://via.placeholder.com/30x30?text=Add1" alt="Ảnh bổ sung 1" class="package-additional-thumbnail">
+                                                <img src="https://via.placeholder.com/30x30?text=Add2" alt="Ảnh bổ sung 2" class="package-additional-thumbnail">
+                                            </div>
+                                        </td>
+                                        <td>Câu hỏi 1 cho gói cơ bản?</td>
+                                        <td>Trả lời 1 cho gói cơ bản.</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-info mb-2 w-100">Sửa</button>
+                                            <button class="btn btn-sm btn-danger w-100">Xóa</button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>2</th>
                                         <td>Gói Nâng cao</td>
+                                        <td>
+                                            <ul class="package-description-list">
+                                                <li>Truy cập tất cả tính năng</li>
+                                                <li>Hỗ trợ ưu tiên 24/7</li>
+                                                <li>Cập nhật định kỳ</li>
+                                            </ul>
+                                        </td>
                                         <td>250.000 VNĐ</td>
                                         <td>Gói cao cấp</td>
                                         <td>
-                                            <ul class="package-description-list">
-                                                <li>Full tính năng cao cấp</li>
-                                                <li>Hỗ trợ khách hàng 24/7</li>
-                                                <li>Ưu tiên truy cập beta</li>
-                                            </ul>
+                                            <div class="d-flex flex-wrap gap-1">
+                                                <span class="badge bg-secondary">Premium</span>
+                                                <span class="badge bg-secondary">Support</span>
+                                            </div>
                                         </td>
-                                        <td><img src="https://via.placeholder.com/50x50"  class="package-thumbnail"></td> <td>
-                                            <button class="btn btn-sm btn-info me-2">Sửa</button>
-                                            <button class="btn btn-sm btn-danger">Xóa</button>
+                                        <td><img src="https://via.placeholder.com/50x50?text=Avatar2" alt="Ảnh đại diện" class="package-thumbnail"></td>
+                                        <td>
+                                            <div class="d-flex flex-wrap gap-1">
+                                                <img src="https://via.placeholder.com/30x30?text=Add3" alt="Ảnh bổ sung 3" class="package-additional-thumbnail">
+                                            </div>
+                                        </td>
+                                        <td>Câu hỏi 2 cho gói nâng cao?</td>
+                                        <td>Trả lời 2 cho gói nâng cao.</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-info mb-2 w-100">Sửa</button>
+                                            <button class="btn btn-sm btn-danger w-100">Xóa</button>
                                         </td>
                                     </tr>
-                                </tbody>
+                                    </tbody>
                             </table>
                         </div>
                     
@@ -350,40 +385,69 @@
         </div>
     </footer>
 
+    
     <div class="modal fade" id="createPackageModal" tabindex="-1" aria-labelledby="createPackageModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="createPackageModalLabel">Tạo gói dịch vụ mới</h5>
+                    <h5 class="modal-title" id="createPackageModalLabel">Tạo gói dịch vụ Mới</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="packageName" class="form-label">Tên gói</label>
-                            <input type="text" class="form-control" id="packageName" required>
+                            <label for="packageName" class="form-label required-field">Tên gói</label>
+                            <input type="text" class="form-control" id="packageName" placeholder="Nhập tên gói" required>
                         </div>
                         <div class="mb-3">
-                            <label for="packagePrice" class="form-label">Giá</label>
-                            <input type="number" class="form-control" id="packagePrice" required>
+                            <label for="packageDescriptionModal" class="form-label required-field">Mô tả</label>
+                            <textarea class="form-control" id="packageDescriptionModal" rows="3" placeholder="Nhập mô tả chi tiết về gói" required></textarea>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="packagePrice" class="form-label required-field">Giá (VNĐ)</label>
+                                <input type="number" class="form-control" id="packagePrice" placeholder="Nhập giá gói" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="packageCategory" class="form-label required-field">Danh mục</label>
+                                <select class="form-select" id="packageCategory" required>
+                                    <option value="">Chọn danh mục</option>
+                                    <option value="basic">Gói cơ bản</option>
+                                    <option value="advanced">Gói nâng cao</option>
+                                    <option value="pro">Gói Pro</option>
+                                    <option value="enterprise">Gói Doanh nghiệp</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="packageCategory" class="form-label">Thể loại</label>
-                            <input type="text" class="form-control" id="packageCategory" required>
+                            <label for="packageTags" class="form-label">Tags</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="packageTags" placeholder="Nhập tag">
+                                <button class="btn btn-outline-secondary" type="button" id="addTagBtn">
+                                    <i class="bi bi-plus"></i> Thêm Tag
+                                </button>
+                            </div>
+                            <div id="tagsContainer" class="mt-2 d-flex flex-wrap gap-2">
+                                </div>
                         </div>
                         <div class="mb-3">
-                            <label for="packageDescription" class="form-label">Mô tả</label>
-                            <textarea class="form-control" id="packageDescription" rows="5" placeholder="Nhập mỗi tính năng trên một dòng mới"></textarea>
+                            <label for="avatarImage" class="form-label">Ảnh đại diện</label>
+                            <input type="file" class="form-control" id="avatarImage" accept="image/*">
                         </div>
                         <div class="mb-3">
-                            <label for="packageImage" class="form-label">Hình ảnh</label>
-                            <input type="file" class="form-control" id="packageImage" accept="image/*">
+                            <label for="additionalImages" class="form-label">Ảnh bổ sung</label>
+                            <input type="file" class="form-control" id="additionalImages" accept="image/*" multiple>
+                        </div>
+                        <div class="mb-3">
+                            <label for="promptQuestion" class="form-label">Prompts</label>
+                            <input type="text" class="form-control mb-2" id="promptQuestion" placeholder="Nhập câu hỏi">
+                            <input type="text" class="form-control" id="promptAnswer" placeholder="Nhập câu trả lời">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="submit" class="btn btn-primary">Lưu gói</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Tạo</button>
                 </div>
             </div>
         </div>

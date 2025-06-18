@@ -457,4 +457,44 @@
     background-color: #0A7F90;
     border-color: #0A7F90;
 }
+/* Trong goiDichVu.css */
+
+.form-label.required-field::after {
+    content: ' *';
+    color: red;
+}
+
+/* Tùy chỉnh cho Tags (chỉ là giao diện, cần JS để thêm/xóa) */
+.tags-badge { /* Ví dụ cho class của tag sau khi được thêm vào */
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: #0E91A5; /* Màu tag */
+    margin-right: 0.25rem;
+}
+
+.tags-badge .remove-tag {
+    margin-left: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.7;
+}
+.tags-badge .remove-tag:hover {
+    opacity: 1;
+}
+
+/* Điều chỉnh khoảng cách cho các input file nếu cần */
+.form-control[type="file"] {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
 
